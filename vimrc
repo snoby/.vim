@@ -86,7 +86,9 @@ endif
 
 "Color schemes
 set background=dark
-colorscheme torte
+"colorscheme torte
+let g:solarized_termcolors =256 
+colorscheme solarized
 "
 " AirLine configuration
 "
