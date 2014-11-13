@@ -85,6 +85,7 @@ if has ( 'gui_running')
 endif
 
 "Color schemes
+set background=dark
 colorscheme torte
 "
 " AirLine configuration
