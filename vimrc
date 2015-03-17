@@ -85,7 +85,10 @@ if has ( 'gui_running')
 endif
 
 "Color schemes
-colorscheme torte
+set background=dark
+"colorscheme torte
+let g:solarized_termcolors =256 
+colorscheme solarized
 "
 " AirLine configuration
 "
