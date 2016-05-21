@@ -1,9 +1,10 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+set nocompatible
 set expandtab
-set tabstop=3
-set shiftwidth=3
+set tabstop=2
+set shiftwidth=2
 set autoindent
 set smartindent
 set number
@@ -11,7 +12,7 @@ set incsearch
 set nolazyredraw " Don't redraw while executing macros
 set cindent  " correctly indent c files
 set ignorecase   " don't care about the case when searching
-set smartcase    " will only make the search case sensitive when search term is 
+set smartcase    " will only make the search case sensitive when search term is
 set hlsearch     " highlight the search functionality
 set autowrite     " Automatically write a file when moving off a modified buffer.
 "This makes the clipboard selection alutomatically shared to the system
@@ -74,7 +75,7 @@ if has ( 'gui_running')
       	"set guifont=Monaco:h11
       	set guifont="DejaVu Sans Mono":h12
          " Turn off antialias
-         "set noanti  
+         "set noanti
          "Turn on the Toolbar
          set go+=T
    	else
@@ -86,9 +87,9 @@ endif
 
 "Color schemes
 set background=dark
-"colorscheme torte
-let g:solarized_termcolors =256 
-colorscheme solarized
+colorscheme torte
+"let g:solarized_termcolors =256
+"colorscheme solarized
 "
 " AirLine configuration
 "
