@@ -34,3 +34,9 @@
 [submodule "/Users/snoby/.vim/bundle/vim-go"]
 	path = /Users/snoby/.vim/bundle/vim-go
 	url = git://github.com/fatih/vim-go.git
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = git@github.com:fatih/vim-go.git
+[submodule "bundle/AnsiEsc.vim"]
+	path = bundle/AnsiEsc.vim
+	url = git@github.com:vim-scripts/AnsiEsc.vim.git

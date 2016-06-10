@@ -9,6 +9,12 @@ set autoindent
 set smartindent
 set number
 set incsearch
+set noswapfile
+set nowritebackup
+set nobackup
+set ruler "Show the cursor position all the time
+set autowrite "Automaticall :write before running commands
+set showcmd " Show incomplete commands
 set nolazyredraw " Don't redraw while executing macros
 set cindent  " correctly indent c files
 set ignorecase   " don't care about the case when searching
@@ -168,3 +174,7 @@ let g:neocomplcache_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 " For vim-buffergator
 "
 
+"
+" For HAproxy
+"
+au BufRead,BufNewFile haproxy* set ft=haproxy
