@@ -64,3 +64,6 @@
 [submodule "delimitMate"]
 	path = delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+[submodule "Dockerfile.vim"]
+	path = Dockerfile.vim
+	url = https://github.com/ekalinin/Dockerfile.vim.git
