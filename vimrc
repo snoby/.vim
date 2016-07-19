@@ -83,7 +83,7 @@ if has ( 'gui_running')
          " Turn off antialias
          "set noanti
          "Turn on the Toolbar
-         set go+=T
+         "set go+=T
    	else
       "This is a Linux based computer.
          set guifont=Monospace\ 9
@@ -178,3 +178,39 @@ let g:neocomplcache_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 " For HAproxy
 "
 au BufRead,BufNewFile haproxy* set ft=haproxy
+
+"
+" For syntastic
+"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+"
+" for golang
+"
+" use goimports for formatting
+let g:go_fmt_command = "goimports"
+
+" turn highlighting on
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
+"
+" chef erb files syntax highlighting
+"
+autocmd BufRead,BufNewFile *.erb set filetype=eruby
+
+"
+" For HAPROXY you have to add this to the first line of the cfg file
+"  # vim: set ft=haproxy :
+"
