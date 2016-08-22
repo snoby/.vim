@@ -1,9 +1,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "bundle/neocomplcache.vim"]
-	path = bundle/neocomplcache.vim
-	url = https://github.com/Shougo/neocomplcache.vim.git
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
@@ -67,3 +64,21 @@
 [submodule "Dockerfile.vim"]
 	path = Dockerfile.vim
 	url = https://github.com/ekalinin/Dockerfile.vim.git
+[submodule "bundle/neocomplete"]
+	path = bundle/neocomplete
+	url = https://github.com/Shougo/neocomplete.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/Vim-Jinja2.vim"]
+	path = bundle/Vim-Jinja2.vim
+	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
+[submodule "bundle/vim-pasta"]
+	path = bundle/vim-pasta
+	url = git://github.com/sickill/vim-pasta.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/nginx.vim"]
+	path = bundle/nginx.vim
+	url = https://github.com/vim-scripts/nginx.vim
