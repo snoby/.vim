@@ -97,7 +97,7 @@ endif
 
 "Color schemes
 set background=dark
-colorscheme torte
+colorscheme ir_black
 "let g:solarized_termcolors =256
 "colorscheme solarized
 "
@@ -268,9 +268,12 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
-let g:syntastic_loc_list_height = 5
+let g:syntastic_loc_list_height = 10
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': ['foo', 'bar'],
+                           \ 'passive_filetypes': ['java'] }
 
 "
 " BetterWhitespace
@@ -302,3 +305,6 @@ autocmd BufRead,BufNewFile *.erb set filetype=eruby
 " For HAPROXY you have to add this to the first line of the cfg file
 "  # vim: set ft=haproxy :
 "
+" changes for indentLine plugin
+let g:indentLine_color_gui = '#A4E57E'
+let g:indentLine_char = '|'
