@@ -1,6 +1,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
@@ -24,13 +24,13 @@
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/vim-better-whitespace"]
 	path = bundle/vim-better-whitespace
-	url = git://github.com/ntpeters/vim-better-whitespace.git
+	url = https://github.com/ntpeters/vim-better-whitespace.git
 [submodule "bundle/salt-vim"]
 	path = bundle/salt-vim
-	url = git://github.com/saltstack/salt-vim.git
+	url = https://github.com/saltstack/salt-vim.git
 [submodule "/Users/snoby/.vim/bundle/vim-go"]
 	path = /Users/snoby/.vim/bundle/vim-go
-	url = git://github.com/fatih/vim-go.git
+	url = https://github.com/fatih/vim-go.git
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = git@github.com:fatih/vim-go.git
@@ -42,10 +42,10 @@
 	url = git@github.com:scrooloose/syntastic.git
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
-	url = git://github.com/tpope/vim-rails.git
+	url = https://github.com/tpope/vim-rails.git
 [submodule "bundle/vim-bundler"]
 	path = bundle/vim-bundler
-	url = git://github.com/tpope/vim-bundler.git
+	url = https://github.com/tpope/vim-bundler.git
 [submodule "bundle/haproxy.vim"]
 	path = bundle/haproxy.vim
 	url = https://github.com/zimbatm/haproxy.vim.git
@@ -72,7 +72,7 @@
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
 [submodule "bundle/vim-pasta"]
 	path = bundle/vim-pasta
-	url = git://github.com/sickill/vim-pasta.git
+	url = https://github.com/sickill/vim-pasta.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
