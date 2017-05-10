@@ -1,4 +1,4 @@
-execute pathogen#infect()
+call pathogen#infect()
 syntax on
 filetype plugin indent on
 set nocompatible
@@ -65,6 +65,14 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+
+"
+" Auto save on focus loss
+"
+:au FocusLost * silent! wa
+
+
+
 " Tab configuration
 map <leader>tn :tabnew<cr>
 
@@ -98,7 +106,7 @@ endif
 
 "Color schemes
 set background=dark
-colorscheme ir_black
+colorscheme murphy
 "let g:solarized_termcolors =256
 "colorscheme solarized
 "
@@ -169,6 +177,9 @@ autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType yml setlocal ts=2 sts=2 sw=2 expandtab
 
 " Enable heavy omni completion.
 if !exists('g:neocomplete#sources#omni#input_patterns')
@@ -252,3 +263,28 @@ let g:ansible_options = {'ignore_blank_lines': 0}
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
 let g:markdown_syntax_conceal = 0
 
+augroup markdown
+  au!
+  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+augroup END
+
+
+" For vim go and syntastic at the same time
+let g:syntastic_go_checkers = ['golint','govet','errcheck']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes' : ['go'] }
+let g:go_list_type = "quickfix"
+
+
+" For Go editing
+" Control n for going to the next error in the quickfix window.
+" Control M for going to the previous error in the quickfix window
+" leader \ a to close the quickfix window
+map <C-n> :cnext<CR>
+map <C-m> :cprevious<CR>
+nnoremap <leader>a :cclose<CR>
+
+" Sets all lists to be quickfix instead of a a location list and a quickfix
+" window.
+let g:go_list_type = "quickfix"
+let g:go_highlight_types = 1
+let g:go_highlight_methods = 1
