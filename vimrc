@@ -13,7 +13,7 @@ set noswapfile
 set nowritebackup
 set nobackup
 set showcmd
-set ruler "Show the cursor position all the time
+set ruler     "Show the cursor position all the time
 set autowrite "Automaticall :write before running commands
 set showcmd " Show incomplete commands
 set nolazyredraw " Don't redraw while executing macros
@@ -22,7 +22,17 @@ set ignorecase   " don't care about the case when searching
 set smartcase    " will only make the search case sensitive when search term is
 set hlsearch     " highlight the search functionality
 set autowrite     " Automatically write a file when moving off a modified buffer.
+
+"
+" Switch Buffers with the tab key
+"They allow you to switch buffers: Tab for the next one, Shift-Tab for the previous one. To quickly close a buffer, I use Ctrl-X.
 "This makes the clipboard selection alutomatically shared to the system
+"
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
+nnoremap <C-X> :bdelete<CR>
+
+
 set clipboard=unnamed
 "Make visual selections automatically go to the clipboard
 set go+=a
@@ -30,6 +40,8 @@ call pathogen#helptags()
 "Window behavior
 set scrolloff=3  "before scrolling off the screen u will have 3 lines helps with context
 
+"For Makefiles
+autocmd FileType make setlocal noexpandtab
 
 "
 " syntax knowledge
@@ -72,9 +84,22 @@ map <C-l> <C-W>l
 :au FocusLost * silent! wa
 
 
-
 " Tab configuration
 map <leader>tn :tabnew<cr>
+
+"
+"
+"" Buffer Navigation
+" Toggle left sidebar: NERDTree and BufferGator
+" fu! UiToggle()
+"   let b = bufnr("%")
+"   execute "NERDTreeToggle | BuffergatorToggle"
+"   execute ( bufwinnr(b) . "wincmd w" )
+"   execute ":set number!"
+" endf
+" map  <silent> <Leader>w  <esc>:call UiToggle()<cr>
+"
+
 
 "
 "BufferGator configuraiton
@@ -92,7 +117,7 @@ if has ( 'gui_running')
    let s:uname = system("uname")
    	if s:uname == "Darwin\n"
       	" This is a mac
-      	set guifont=Menlo:h11
+      	set guifont=Menlo:h12
       	"set guifont="DejaVu Sans Mono":h12
          " Turn off antialias
          "Turn on the Toolbar
@@ -285,6 +310,17 @@ nnoremap <leader>a :cclose<CR>
 
 " Sets all lists to be quickfix instead of a a location list and a quickfix
 " window.
-let g:go_list_type = "quickfix"
-let g:go_highlight_types = 1
-let g:go_highlight_methods = 1
+" let g:go_list_type = "quickfix"
+" let g:go_highlight_types = 1
+" let g:go_highlight_methods = 1
+
+"
+" Turn off Vim's default regex handling
+nnoremap / /\v
+vnoremap / /\v
+
+
+"
+" to get out of pressing ESC to get out of editing mode use jj instead
+"
+inoremap jj <ESC>

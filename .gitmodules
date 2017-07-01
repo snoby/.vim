@@ -7,27 +7,18 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
-[submodule "bundle/vim-unimpaired"]
-	path = bundle/vim-unimpaired
-	url = https://github.com/tpope/vim-unimpaired.git
 [submodule "bundle/vim-sensible"]
 	path = bundle/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
 [submodule "autoload/pathogen.vim"]
 	path = autoload/pathogen.vim
 	url = https://github.com/tpope/vim-pathogen.git
-[submodule "bundle/vim-buffergator"]
-	path = bundle/vim-buffergator
-	url = https://github.com/jeetsukumaran/vim-buffergator.git
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/vim-better-whitespace"]
 	path = bundle/vim-better-whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace.git
-[submodule "bundle/salt-vim"]
-	path = bundle/salt-vim
-	url = https://github.com/saltstack/salt-vim.git
 [submodule "/Users/snoby/.vim/bundle/vim-go"]
 	path = /Users/snoby/.vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
@@ -64,9 +55,6 @@
 [submodule "bundle/neocomplete"]
 	path = bundle/neocomplete
 	url = https://github.com/Shougo/neocomplete.vim.git
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/Vim-Jinja2.vim"]
 	path = bundle/Vim-Jinja2.vim
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
@@ -79,9 +67,6 @@
 [submodule "bundle/nginx.vim"]
 	path = bundle/nginx.vim
 	url = https://github.com/vim-scripts/nginx.vim
-[submodule "bundle/vim-ansible-yaml"]
-	path = bundle/vim-ansible-yaml
-	url = https://github.com/chase/vim-ansible-yaml.git
 [submodule "bundle/indentLine"]
 	path = bundle/indentLine
 	url = https://github.com/Yggdroot/indentLine.git
@@ -97,3 +82,6 @@
 [submodule "bundle/vim-flavored-markdown"]
 	path = bundle/vim-flavored-markdown
 	url = https://github.com/jtratner/vim-flavored-markdown.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
